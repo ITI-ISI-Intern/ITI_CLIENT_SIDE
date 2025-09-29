@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            background-color: rgb(43, 40, 40);
+            position: sticky;
+            z-index: 999;
+            top: 0;
+        }
+
+        .nav-list {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: rgb(59, 201, 59);
+        }
+
+        nav a:visited {
+            background-color: rgb(59, 201, 59);
+        }
+
+        .img-container {
+            width: 80%;
+            height: 500px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 500px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+        }
+
+        .text-container {
+            background-color: rgba(20, 20, 20, 0.7);
+            position: absolute;
+            color: white;
+            right: 10px;
+            bottom: 10px;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .text-container p {
+            font-size: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="nav-list">
+            <li>
+                <a href="Cards.html">Home</a>
+                <a href="nav-bar.html">navbar</a>
+                <a href="image-page.html">image-page</a>
+                <a href="dropdown.html">dropdown</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="img-container">
+        <img src="./assets/pexels-riciardus-297803.jpg" rel="">
+        <div class="text-container">
+            <b>Nature<b>
+                    <p>What is beautiful mountain</p>
+        </div>
+    </div>
+</body>
+
+</html>

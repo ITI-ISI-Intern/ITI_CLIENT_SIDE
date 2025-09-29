@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+</head>
+<style>
+    .dropdown-menu {
+        position: relative;
+        min-width: 200PX;
+        max-width: 350px;
+        width: 250px;
+    }
+
+    .drop-content {
+        display: none;
+        position: absolute;
+        background-color: #222;
+        border: 1px red solid;
+    }
+
+    .drop-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .drop-content a {
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .drop-content a:hover{
+        background-color: crimson;
+    }
+
+    .dropdown-menu:hover .drop-content{
+        display: block;
+        width: inherit;
+    }
+</style>
+
+<body>
+    <div class="dropdown-menu">
+        <button class="drop_btn" width="100px">Show</button>
+        <div class="drop-content">
+            <ul>
+                <li><a href="">Google</a></li>
+                <li><a href="">W3Schools</a></li>
+                <li><a href="">Google</a></li>  
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

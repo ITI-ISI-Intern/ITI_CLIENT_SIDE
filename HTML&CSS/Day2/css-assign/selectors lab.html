@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>
+            D02
+        </title>
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            /* select p elements and make them red */
+            p{
+                color: red;
+            }
+            /* select p and div elements  */
+            p , div{
+
+            }
+
+            /* select p with class mainClass direct child for div with id myDiv and make it styled  */
+            #myDiv > p.mainClass {
+                color: rgb(0, 197, 99);
+                text-decoration: underline;
+                background-color: cadetblue;
+            } 
+
+            /* select all p inside div and style them  */
+            div p{
+                font-size: large;
+                font-style: italic;
+                color: blue
+            }
+
+            /*  select input with type text element with class myClass */
+            input[type="text"].myclass{
+                border-color: rgb(0, 0, 255);
+            }
+
+            /* select span elements after div */
+            div ~ span{
+                color: cyan
+            }
+
+            /*select p with class myClass  */
+            p.myClass{
+                color:blanchedalmond
+            }
+
+            /* select div with id myDiv  */
+            div#myDiv{
+                background-color: tomato;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h2 class="myClass">
+            CSS 
+        </h2>
+        <p id="myP" >
+            Diam labore sadipscing amet nonumy amet sea aliquyam invidunt at, no invidunt elitr at ut takimata erat tempor ipsum eos..
+        </p>
+        <div id="container">
+            <p>this is p</p>
+            <p class="myClass">this is p2</p>
+            <p>this is p3</p>
+            <p>this is p4</p>
+        </div>
+        <p>this is sep</p>
+        <span>this is span after div</span>
+        <span>this is span after div</span>
+        <ul>
+            <li>
+                Coffee
+            </li>
+            <li class="myClass mainClass">
+                Tea
+            </li>
+            <li>
+                Water
+            </li>
+        </ul>
+        <div id="mydiv">
+            <p class="mainClass">this is p inside div </p>
+            <div>
+                <p class="mainClass">this is p inside div inside div</p>
+                <p>this is p inside div inside div</p>
+                <p>this is p inside div inside div</p>
+            </div>
+        </div>
+
+        <form>
+            <input type="text" class="myClass" name="fname" >
+            <input type="text" name="age" >
+            <input type="password" name="age" >
+        </form>
+    </body>
+
+</html>

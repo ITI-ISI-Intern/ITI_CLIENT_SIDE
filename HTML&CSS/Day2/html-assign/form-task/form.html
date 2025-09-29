@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+
+<form action="thank.html" method="get">
+
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" required><br><br>
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="repeat_password">Repeat Password:</label>
+    <input type="password" id="repeat_password" name="repeat_password"><br><br>
+
+    <label for="birthdate">Birth Date:</label>
+    <input type="date" id="birthdate" name="birthdate"><br><br>
+
+    <label for="picture">User Picture:</label>
+    <input type="file" id="picture" name="picture"><br><br>
+
+    <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+    </fieldset>
+    <br>
+
+    <label for="faculty">Faculty:</label>
+    <select id="faculty" name="faculty">
+        <option value="">--Select Faculty--</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Science">Science</option>
+        <option value="Medicine">Medicine</option>
+        <option value="Arts">Arts</option>
+    </select>
+    <br><br>
+
+    <fieldset>
+        <legend>Interests</legend>
+        <input type="checkbox" id="programming" name="interests" value="Programming">
+        <label for="programming">Programming</label>
+        <input type="checkbox" id="reading" name="interests" value="Reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="swimming" name="interests" value="Swimming">
+        <label for="swimming">Swimming</label>
+    </fieldset>
+    <br>
+
+    <label for="about">About You:</label><br>
+    <textarea id="about" name="about" rows="4" cols="40"></textarea><br><br>
+
+    <input type="checkbox" id="terms" name="terms">
+    <label for="terms">I agree to the terms and conditions</label><br><br>
+
+    <input type="submit" value="Submit">&nbsp;
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
