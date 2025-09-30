@@ -26,15 +26,22 @@ Here’s a sample overview (you should adjust according to your actual folders):
 ```
 ITI_CLIENT_SIDE/
 ├── HTML&CSS/
-│ ├── lab1.html
-│ └── style1.css
+│ ├── Day1
+| ├── Day2
+│ └── Day3
 ├── HTML5&CSS3/
-│ ├── lab2.html
-│ └── style2.css
+│ ├── card assignment
+| ├── assignment-day2
+│ └── Day 3 assignment
 ├── Js/
-│ ├── lab3.js
-│ ├── index.html
-│ └── style3.css
+│ ├── Js Day 1
+│ ├── Js Day 2
+│ ├── Js Day 3
+│ ├── Js Day 4
+│ ├── Js Day 5
+│ ├── Js Day 6
+│ ├── Js Day 7
+│ └── Js Day 8
 └── README.md
 ```
 
